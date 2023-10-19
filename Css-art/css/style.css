@@ -1,0 +1,91 @@
+.post-it {
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 300px, 300px 100%, 0% 100%);
+  transition: 2s all;
+  transform-origin: top left;
+  flex-shrink: 0;
+}
+
+.post-it:hover {
+  transform: rotate(15deg);
+  transition: 0.5s all;
+}
+
+.groen {
+  background: rgb(99, 184, 99);
+}
+
+.geel {
+  background: rgb(241, 241, 111);
+}
+
+.rood {
+  background: rgb(201, 102, 102);
+}
+
+.groen > div, .geel > div, .rood > div {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.groen > div {
+  background: rgb(73, 159, 73);
+}
+
+.geel > div {
+  background: rgb(236, 236, 65);
+}
+
+.rood > div {
+  background: rgb(186, 66, 66);
+}
+
+.tekst {
+  font-size: 190%;
+  font-weight: 400;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #6a89c6;
+  font-size: 1.6rem;
+  font-family: "Gloria Hallelujah", cursive;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+a, a:visited, a:link {
+  text-decoration: none;
+  color: #eee;
+}
+
+@media screen and (max-width: 1200px) {
+  .post-it:hover {
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

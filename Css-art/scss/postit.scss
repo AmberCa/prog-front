@@ -1,0 +1,50 @@
+@use 'colors';
+.post-it{
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 300px, 300px 100%, 0% 100%);
+    transition: 2s all;
+    transform-origin: top left;
+    flex-shrink: 0;
+}
+.post-it:hover{
+    transform: rotate(15deg);
+    transition: 0.5s all;
+}
+
+.groen{
+    background: colors.$groen;
+}
+.geel{
+    background: colors.$geel;
+}
+.rood{
+    background: colors.$rood;
+}
+
+.groen > div, .geel > div, .rood > div{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.groen > div{
+    background: colors.$groen-div;
+}
+.geel > div{
+    background: colors.$geel-div;
+}
+.rood > div{
+    background: colors.$rood-div;
+}
+
+.tekst{
+    font-size: 190%;
+    font-weight: 400;
+}

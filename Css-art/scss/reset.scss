@@ -1,0 +1,32 @@
+@use 'colors';
+@use 'fotn';
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: colors.$background;
+    font-size: 1.6rem;
+    font-family: fotn.$font;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+a, a:visited, a:link{
+    text-decoration: none;
+    color: #eee;
+}
