@@ -1,20 +1,14 @@
 @use 'colors';
+@use 'components';
+
 .post-it{
-    width: 40rem;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 300px, 300px 100%, 0% 100%);
-    transition: 2s all;
-    transform-origin: top left;
-    flex-shrink: 0;
+    @extend %post-it;
+    &:hover{
+        transform: rotate(15deg);
+        transition: 0.5s all;
+    }
 }
-.post-it:hover{
-    transform: rotate(15deg);
-    transition: 0.5s all;
-}
+
 
 .groen{
     background: colors.$groen;
@@ -27,11 +21,7 @@
 }
 
 .groen > div, .geel > div, .rood > div{
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    @extend %div-post-it;
 }
 
 .groen > div{
