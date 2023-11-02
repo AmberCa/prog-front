@@ -11,6 +11,14 @@
   flex-shrink: 0;
 }
 
+.groen > div, .geel > div, .rood > div {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .post-it:hover {
   transform: rotate(15deg);
   transition: 0.5s all;
@@ -26,14 +34,6 @@
 
 .rood {
   background: rgb(201, 102, 102);
-}
-
-.groen > div, .geel > div, .rood > div {
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .groen > div {
