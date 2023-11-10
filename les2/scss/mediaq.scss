@@ -1,0 +1,65 @@
+@media screen and (max-width: 75rem) {
+    body{
+        font-size: 1.6rem;
+    }
+    
+    .header{
+        height: 140rem;
+    }
+
+    .over{
+        min-height: 120rem;
+    }
+
+    .over__header{
+        height: 20%;
+    }
+
+    .over__columns{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .over__column{
+        height: 50%;
+    }
+
+    .over__p{
+        width: 100%;
+    }
+
+    .over__figure{
+        height: 40%;
+    }
+
+    .K__list{
+        min-height: 120rem;
+    }
+
+    .K__listI{
+        width: 100%;
+    }
+
+    .Gallerij{
+        height: auto;
+    }
+
+    .G__img{
+        height: 20rem;
+        width: 100%;
+    }
+
+    .G__img:hover > section{
+        transform: scaleX(0);
+    }
+    
+    .G__img:hover > section> .cta{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .nav__list{
+        flex-direction: column;
+    }
+}

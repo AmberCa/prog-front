@@ -1,0 +1,45 @@
+@use 'colors';
+@use 'font';
+
+%cta{
+    width: 11rem;
+    padding: 0.5rem;
+    font-size: 70%;
+    background: colors.$over;
+    color: colors.$text;
+    border-radius: 2rem;
+    height: 5rem;
+    border: none;
+    text-transform: uppercase;
+    font-family: font.$cursive;
+    padding-top: 1.5rem;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: darken(colors.$over, 10%);
+    transition: 0.2s;
+}
+
+%h2font{
+    border-top: colors.$border;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 250%;
+    font-family: font.$cursive;
+    padding: 4rem;
+    color: colors.$text-normaal;
+}
+
+%section{
+    padding: 4rem;
+    width: 100%;
+    min-height: 80vh;
+}
+
+%icon{
+    font-size: 500%;
+    color: colors.$text;
+    border: 0.7rem solid colors.$over;
+    border-radius: 50%;
+}

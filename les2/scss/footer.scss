@@ -1,0 +1,25 @@
+@use 'font';
+@use 'colors';
+@use 'components';
+
+.footer{
+    padding: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: colors.$cta;
+    border-top: colors.$border;
+    border-radius: 2rem;
+}
+
+.F__icon{
+    @extend %icon;
+    font-size: 200%;
+    border: 0.5rem solid colors.$over;
+    padding: 1rem;
+}
+
+.F__icon:hover{
+    cursor: pointer;
+}

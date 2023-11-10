@@ -1,0 +1,65 @@
+@use 'font';
+@use 'components';
+@use 'colors';
+
+
+.Gallerij{
+@extend %section;
+display: flex;
+flex-direction: column;
+align-items: center;
+    
+}
+
+.G__h2{
+   @extend %h2font;
+}
+
+.G__fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.G__foto{
+    width: 25%;
+    list-style: none;
+    position: relative;
+}
+
+.G__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.G__foto:hover > section{
+    transform: scaleX(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.G__foto > section> .cta{
+    @extend %cta;    
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.1s;
+
+}
+
+.G__foto > section{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), 20%, rgba(0, 0, 0, 0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: right;
+}
+
+.G__foto:hover > section > .cta{
+    opacity: 1;
+}
